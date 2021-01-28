@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------
+
+yarn init -y
+
+yarn add next
+
+yarn dev
+
+yarn add react react-dom
+
+yarn dev
+
+yarn add typescript @types/react @types/node -D
+
+yarn dev
+
+yarn add eslint -D
+
+yarn eslint:init
+
+yarn dev
+
+yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+--------------------------------------------------------------------------------
