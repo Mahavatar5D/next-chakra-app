@@ -8,7 +8,7 @@ import theme from '../shared/theme'
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <ColorModeProvider value='dark' options={theme.config} />
+      <ColorModeProvider options={theme.config} />
       <EmotionProvider theme={theme}>
         <Component {...pageProps} />
       </EmotionProvider>
