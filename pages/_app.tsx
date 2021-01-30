@@ -1,13 +1,18 @@
 import React from 'react'
 import type { AppProps } from 'next/app'
-import { ThemeProvider, theme, CSSReset } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
+import { ThemeProvider as EmotionProvider } from '@emotion/react'
+
+import theme from '../shared/theme'
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeProvider theme={theme}>
-      <CSSReset />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <ChakraProvider resetCSS theme={theme}>
+      <ColorModeProvider value='dark' options={theme.config} />
+      <EmotionProvider theme={theme}>
+        <Component {...pageProps} />
+      </EmotionProvider>
+    </ChakraProvider>
   )
 }
 
