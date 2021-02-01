@@ -2,8 +2,6 @@ import React from 'react'
 import { Html, Head, Main, NextScript } from 'next/document'
 import { ColorModeScript } from '@chakra-ui/react'
 
-import AppFooter from '../AppFooter'
-
 const MasterPage: React.FC = () => {
   return (
     <Html lang="pt-br">
@@ -16,7 +14,6 @@ const MasterPage: React.FC = () => {
         <Main />
         <NextScript />
       </body>
-      <AppFooter />
     </Html>
   )
 }

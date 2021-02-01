@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AppFooter: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <footer style={{ textAlign: 'center' }}>
       <p>
@@ -10,4 +10,4 @@ const AppFooter: React.FC = () => {
   )
 }
 
-export default AppFooter
+export default Footer
